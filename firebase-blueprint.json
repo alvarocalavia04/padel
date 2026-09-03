@@ -1,0 +1,68 @@
+{
+  "projectId": "earnest-highlander-t53sn",
+  "appId": "1:559199084274:web:82f3e6642097be37d6ba6b",
+  "apiKey": "AIzaSyBW8p9pgPNX_2m06EbU_3EXzWNz68K_qAw",
+  "authDomain": "earnest-highlander-t53sn.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-padelstatsaianal-447f3cbe-5bde-49f8-a6cf-05be07135d11",
+  "storageBucket": "earnest-highlander-t53sn.firebasestorage.app",
+  "messagingSenderId": "559199084274",
+  "measurementId": "",
+  "oAuthClientId": "559199084274-quorlv64jdtsoqfol5qt9fg2o7agvt7d.apps.googleusercontent.com",
+  "recaptchaSiteKey": "",
+  "collections": [
+    {
+      "name": "matches",
+      "description": "Partidos de pádel con sets, estadísticas, toques y análisis",
+      "fields": [
+        {"name": "title", "type": "string", "description": "Título del partido"},
+        {"name": "date", "type": "string", "description": "Fecha del partido"},
+        {"name": "team1", "type": "map", "description": "Equipo 1 (name, player1, player2)"},
+        {"name": "team2", "type": "map", "description": "Equipo 2 (name, player1, player2)"},
+        {"name": "setsScore", "type": "array", "description": "Marcador de sets"},
+        {"name": "stats", "type": "map", "description": "Estadísticas por jugador"},
+        {"name": "summary", "type": "string", "description": "Resumen narrativo del partido"},
+        {"name": "highlights", "type": "array", "description": "Momentos destacados"},
+        {"name": "mvp", "type": "string", "description": "Jugador MVP"},
+        {"name": "court", "type": "string", "description": "Nombre de pista o club"},
+        {"name": "pointRallies", "type": "array", "description": "Rallies y secuencias de puntos"},
+        {"name": "audioNotes", "type": "array", "description": "Notas de voz y transcripciones"},
+        {"name": "youtubeUrl", "type": "string", "description": "URL del vídeo del partido"},
+        {"name": "youtubeTimestamp", "type": "number", "description": "Marca de tiempo de YouTube"},
+        {"name": "youtubeRotation", "type": "number", "description": "Rotación de vídeo"},
+        {"name": "youtubeMirror", "type": "boolean", "description": "Efecto espejo de vídeo"},
+        {"name": "youtubeZoom", "type": "number", "description": "Zoom de vídeo"},
+        {"name": "isCompleted", "type": "boolean", "description": "Si el partido ha finalizado"},
+        {"name": "winnerTeam", "type": "number", "description": "Equipo ganador (1 o 2)"},
+        {"name": "createdAt", "type": "string", "description": "Timestamp de creación"}
+      ]
+    },
+    {
+      "name": "playerProfiles",
+      "description": "Perfiles y fotos de los jugadores del club",
+      "fields": [
+        {"name": "name", "type": "string", "description": "Nombre del jugador"},
+        {"name": "nickname", "type": "string", "description": "Apodo"},
+        {"name": "avatarColor", "type": "string", "description": "Color de avatar"},
+        {"name": "avatarUrl", "type": "string", "description": "URL o base64 de la foto de perfil"},
+        {"name": "preferredSide", "type": "string", "description": "Lado de juego (drive, reves, ambos)"},
+        {"name": "dominantHand", "type": "string", "description": "Mano dominante (diestro, zurdo)"},
+        {"name": "notes", "type": "string", "description": "Notas sobre el jugador"},
+        {"name": "createdAt", "type": "string", "description": "Fecha de creación"}
+      ]
+    },
+    {
+      "name": "clubSettings",
+      "description": "Configuración global visual e identidad del club",
+      "fields": [
+        {"name": "clubName", "type": "string", "description": "Nombre del club"},
+        {"name": "clubTagline", "type": "string", "description": "Lema o subtítulo"},
+        {"name": "bannerImageUrl", "type": "string", "description": "Foto de grupo / portada"},
+        {"name": "customBackgroundUrl", "type": "string", "description": "Fondo de pista"},
+        {"name": "backgroundOpacity", "type": "number", "description": "Opacidad del fondo"},
+        {"name": "courtGlow", "type": "boolean", "description": "Efecto neón en pista"},
+        {"name": "neonTheme", "type": "string", "description": "Color de tema neón"},
+        {"name": "updatedAt", "type": "string", "description": "Última actualización"}
+      ]
+    }
+  ]
+}

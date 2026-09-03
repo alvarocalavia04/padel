@@ -1,0 +1,6 @@
+{
+  "name": "PadelStats AI - Analizador de Audio y Rendimiento",
+  "description": "Marcador de pádel en vivo, selector de alineaciones por perfiles de jugadores para evitar errores ortográficos, análisis de YouTube con dictado por voz y evolución de % errores no forzados por toque.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

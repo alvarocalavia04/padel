@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Permite lectura pública para que todos los amigos puedan consultar estadísticas, perfiles y partidos
+    // y escritura para la gestión de datos compartidos del club.
+    match /matches/{matchId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    
+    match /playerProfiles/{profileId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    
+    match /clubSettings/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
